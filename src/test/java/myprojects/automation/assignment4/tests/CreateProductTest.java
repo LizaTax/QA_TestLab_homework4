@@ -16,7 +16,7 @@ public class CreateProductTest extends BaseTest {
         };
     }
     @Test(dataProvider = "getLoginData")
-    public void createNewProduct(String email, String password) throws InterruptedException {
+    public void createNewProduct(String email, String password) {
         actions.openUrl(baseUrl + "/admin147ajyvk0/");
         actions.login(email, password);
         PRODUCT = ProductData.generate();

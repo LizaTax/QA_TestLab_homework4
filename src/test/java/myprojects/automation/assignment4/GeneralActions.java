@@ -39,7 +39,7 @@ public class GeneralActions {
         clickOnElement(By.name("submitLogin"));
     }
 
-    public void createProduct(ProductData newProduct) throws InterruptedException {
+    public void createProduct(ProductData newProduct) {
         verifyElementAppears(By.id("subtab-AdminCatalog"));
         hoverMouse(By.id("subtab-AdminCatalog"));
         verifyElementAppears(By.id("subtab-AdminProducts"));
