@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Products Management" verbose="1" >
+    <test name="Test for Chrome">
+        <parameter name="browser-param" value="chrome" />
+        <classes>
+            <class name="myprojects.automation.assignment4.tests.CreateProductTest">
+                <methods>
+                    <include name="createNewProduct" />
+                    <include name="checkProductVisibility" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test for Firefox">
+        <parameter name="browser-param" value="firefox" />
+        <classes>
+            <class name="myprojects.automation.assignment4.tests.CreateProductTest">
+                <methods>
+                    <include name="createNewProduct" />
+                    <include name="checkProductVisibility" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test for IE">
+        <parameter name="browser-param" value="ie" />
+        <classes>
+            <class name="myprojects.automation.assignment4.tests.CreateProductTest">
+                <methods>
+                    <include name="createNewProduct" />
+                    <include name="checkProductVisibility" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    Prepare test for firefox and IE browsers
+</suite>
